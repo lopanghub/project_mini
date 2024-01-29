@@ -21,12 +21,12 @@
         }
         ul{ 
             list-style: none; /*불릿 없앰*/
-            border: 1px solid blue
+            /* border: 1px solid blue */
 
         }
         li{
             margin-bottom: 10px;
-            border: 1px solid red
+            /* border: 1px solid red */
         }
        
         .title{ /*class=title에 적용할 스타일*/
@@ -35,11 +35,15 @@
             float: left;
             border: 1px solid yellow
             /* 너비 100px 왼쪽으로 배치 */
-            /* color: red; */
         }
         .button{
             text-align: center;
             border: 1px solid lightcoral;
+        }
+        .product{
+            font-size: small;
+            width: 500px;
+            border: 1px solid purple;
         }
     </style>
 </head>
@@ -84,16 +88,16 @@
         <ul>
             <li>
                 <input type="checkbox" id="p_1">
-                <label for="p_1">과테말라 안티구야(100g)</label>
+                <label for="p_1" class="product">과테말라 안티구야(100g)</label>
                 <input type="number" min="0" value="0" max="5" >개             </li>
             <li>
                 <input type="checkbox" id="p_2">
-                <label for="p_2">인도네시아 만델링(100g)</label>
+                <label for="p_2" class="product">인도네시아 만델링(100g)</label>
                 <input type="number" min="0" value="0" max="5">개 
             </li>
             <li>
                 <input type="checkbox" id="p_3">
-                <label for="p_3">탐라는도다(블렌딩)(100g)</label>
+                <label for="p_3" class="product">탐라는도다(블렌딩)(100g)</label>
                 <input type="number" min="0" value="0" max="5">개
             </li>
         </ul>
