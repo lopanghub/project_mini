@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제</title>
+    <style>
+        fieldset{
+            width: 500px; background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <h1>칼로리 계산기</h1>
+    <fieldset>
+        <ul>
+            <li>
+                <label for="favorite" >자주 먹는 음식</label><br>
+                <select  id="favorite" >
+                    <option value="c_b">닭가슴살</option>
+                    <option value="greek">그릭요거트</option>
+                    <option value="d_s">된장찌개</option>
+                    <option value="pork" selected >삼겹살</option>
+                </select>
+                <input type="submit" value="✔">
+            </li>
+        </ul>
+    
+
+        <form action="search.php" method="post" >
+            <input type="search" title="검색" placeholder="추가 하실 음식을 검색해주세요" autofocus>
+            <input type="submit" value="검색">
+        </form> <br> <br>
+
+    
+    </fieldset>
+    <input type="submit" value="계산하기">
+    <input type="reset" value="취소">
+    <br><br>
+
+    <fieldset>
+        <legend><strong>다음 음식들의 자세한 영양정보를 확인하세요</strong></legend>
+        <img src="../images/11zon_cropped.png" alt="닭가슴살" width="150px" usemap="#nut">
+        <map name="nut">
+            <area shape="circle" coords="75,75,75" 
+            href="https://various.foodsafetykorea.go.kr/nutrient/simple/search/nutriCompInfo.do?searchFoodCode=R001649&searchRegionCode=ZZ&searchMonthCode=AVG" alt="" target="_blank">
+        </map>
+        <img src="../images/tomato.png" alt="토마토" width="150px" usemap="#nut">
+        <map name="nut">
+            <area shape="circle" coords="75,75,75" 
+            href="https://various.foodsafetykorea.go.kr/nutrient/simple/search/nutriCompInfo.do?searchFoodCode=R001224&searchRegionCode=ZZ&searchMonthCode=AVG" alt="" target="_blank">
+        </map>
+        <img src="../images/avo.png" alt="아보타도" width="150px" usemap="#nut">
+        <map name="nut">
+            <area shape="circle" coords="75,75,75" 
+            href="https://various.foodsafetykorea.go.kr/nutrient/simple/search/nutriCompInfo.do?searchFoodCode=R001536&searchRegionCode=ZZ&searchMonthCode=AVG" alt="" target="_blank">
+        </map>
+        
+        
+        
+
+    </fieldset>
+
+</body>
+</html>
