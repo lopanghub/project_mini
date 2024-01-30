@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+    <style>
+        body{
+            width: 900px;
+            border: 0.5px solid gray;
+        }
+        header{
+            margin: 10px; border: 0.5px solid gray; background-color: bisque;
+        }
+        img{
+            float: left;
+        }
+        .s_1{
+            margin: 10px; border: 0.5px solid gray; background-color: bisque;
+            float: left;
+        }
+        .s_2{
+            margin: 10px; border: 0.5px solid gray;
+            background-color: bisque;
+            float: right;
+            width: 180px;
+        }
+        article{
+            margin: 10px; padding: 10px;
+            border: 0.5px solid gray; background-color: bisque;
+            float: left;  width: 450px;        
+        }
+        pre{
+            text-align: left; font-size: 15px;
+        }
+        footer{
+            margin: 10px; border: 0.5px solid gray; 
+            background-color: bisque;
+            clear: both;         
+        }
+        h2{
+            text-align: center;
+        }
+        a:link{
+            color: black; text-decoration: none;
+        }
+        a:hover{
+            color: red; text-decoration: underline;
+        }
+        a:focus{
+            background-color: deeppink;
+        }
+       .small{
+        font-size: smaller;
+       }
+       .center{
+        background-color: aqua;
+        width: 500px; height: 200px; 
+        float: left;
+       }
+       .left{
+        background-color: aquamarine;
+        width: 350px; height: 200px; 
+        float: left;
+       }
+       iframe{
+        margin-left: 30px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/top_logo.gif" alt="" width="150px" >
+        <h1>노래하는 즐거움 </h1>
+    </header>
+    <main>
+        <aside class="s_1">
+            <h2>인기 차트</h2>
+                <ol>
+                    <li><a href="#">헤어지자 말해요</a></li>
+                    <li><a href="#">예뻤어</a></li>
+                    <li><a href="#">응급실(쾌걸춘향ost)</a></li>
+                    <li><a href="#">좋니</a></li>
+                </ol>
+        </aside>
+        <article>
+            <h2>뽀롱뽀롱 뽀로로</h2>
+            <p>
+                야 뽀로로다<br>
+                노는 게 제일 좋아 친구들 모여라<br>
+                언제나 즐거워 개구쟁이 뽀로로<br>
+                눈 덮인 숲 속 마을 꼬마 펭귄 나가신다<br>
+                언제나 즐거워 오늘은 또 무슨 일이 생길까<br>
+                뽀로로를 불러봐요 뽀롱뽀롱<br>
+                뽀로로 뽀롱뽀롱 뽀로로<br>
+                뽀롱뽀롱 뽀롱뽀롱 뽀롱뽀롱 뽀롱 뽀로로<br>
+                노는 게 제일 좋아 친구들 모여라<br>
+                언제나 즐거워<br>
+                뽀롱 뽀롱 뽀롱 뽀롱 뽀로로</p>
+        </article>
+        <aside class="s_2">
+        <form action="">
+            <h4>더 편리하게 이용하세요</h4>
+            <label for="id">id</label>
+            <input type="text" id="id" placeholder="email이나 휴대폰번호"><br>
+            <label for="pw">pw</label>
+            <input type="password" id="pw" maxlength="13" placeholder="비밀번호를 입력하세요">
+            <br>
+            <input type="image" src="../images/login.png" width="120px">
+            <input type="submit" value="회원가입">
+        </form>
+        </aside>
+    </main>
+    <footer>
+        <div class="left">
+            <h4>고객센터</h4>
+            <p><strong>111-1111</strong> <br>
+                <span class="small">상담시간 평일 09~18시<br>
+                토,일,공휴일 휴무</span>
+            </p>
+        </div>
+        <div class="center">
+            <h4>찾아 오시는 길</h4><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d791.5358264794393!2d126.9515699840709!3d37.480944492029366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f660dc1a8e5%3A0xe9d099e33e1115b8!2z6riA66Gc67KM7JWE7J207Yuw7J247J6s6rCc67Cc7JuQ!5e0!3m2!1sko!2skr!4v1706514463162!5m2!1sko!2skr"
+            width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+        </div>
+    </footer>
+</body>
+</html>

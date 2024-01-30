@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 450px;
+        }
+
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>
+        <blockquote><blockquote>레드향 주문하기</blockquote></blockquote>
+    </h1>
+    
+    <fieldset>
+        <legend><strong>배송 정보 151쪽</strong></legend>
+        <ul>
+            <li>
+                <label for="product">주문 상품</label>
+                <select id="product">
+                    <option value="">상품용 1kg</option>
+                    <option value="">상품용 3kg</option>
+                    <option value="">상품용 5kg</option>
+                    <option value="">상품용 10kg</option>
+                    <option value="">선물용 5kg</option>
+                    <option value="">선물용 10kg</option>
+                </select>
+            </li>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" id="name">
+            </li>
+            <li>
+                <label for="addr">배송 주소</label>
+                <input type="text" id="addr">
+            </li>    
+            <li>
+                <label for="mail">이메일</label>
+                <input type="email" id="mail">
+            </li> 
+            <li>
+                <label for="addr">연락처</label>
+                <input type="text" id="addr" placeholder="하이픈 빼고 입력해주세요">
+            </li> 
+            <li>
+                <label for="date">배송 지정</label>
+                <input type="date" id="date">(주문일로부터 최소 3일 이후)
+            </li> 
+        </ul>
+    </fieldset>
+    <input type="submit" value="주문하기">
+    <input type="reset" value="취소하기">
+    
+</body>
+</html>
