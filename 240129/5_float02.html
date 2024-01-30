@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플로트를 활용한 영역 잡기</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 1100px;
+      }
+      header {
+        background-color: aqua;
+        width: 100%; /* %는 위의 1100px에서 비교하는 것 */
+        height: 130px;
+      }
+      img {
+        height: 130px;
+        float: left;
+      }
+      aside {
+        background-color: beige;
+        width: 100px;
+        height: 500px;
+        float: left;
+      }
+      section {
+        background-color: aquamarine;
+        width: 300px;
+        height: 500px;
+        float: left;
+      }
+      figure {
+        background-color: blueviolet;
+        width: 700px;
+        height: 500px;
+        float: right;
+      }
+      footer {
+        background-color: lightsalmon;
+        width: 100%;
+        height: 80px;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <header>
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+        />
+        <h1>header 헤더부분</h1>
+      </header>
+      <aside>
+        <h2>aside 사이드 영역</h2>
+      </aside>
+      <section>
+        <h3>section 오른쪽 영역</h3>
+      </section>
+      <figure>
+        <h4>figure 오른쪽 사이드바</h4>
+      </figure>
+      <footer>
+        <address>footer 이 곳에는 저작권자를 작성해요.</address>
+      </footer>
+    </div>
+  </body>
+</html>

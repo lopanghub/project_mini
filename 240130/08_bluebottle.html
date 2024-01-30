@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bluebottle</title>
+    <!-- css 파일을 따로 만들어서 연결 -->
+    <link rel="stylesheet" href="08_bluebottle_style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img
+            src="data:image/png;base64,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"
+            width="60px"
+            alt="bluelogo"
+          />
+        </div>
+        <div class="nav">
+          <a href="#" class="nav-menu">ABOUT</a>
+          <a href="#" class="nav-menu">CAFES</a>
+          <a href="#" class="nav-menu">MENU</a>
+          <a href="#" class="nav-menu">COMPANY</a>
+          <a href="#" class="nav-menu">NEWS</a>
+        </div>
+      </header>
+
+      <main>
+        <h2 class="ment1">WELCOME EVERYONE</h2>
+        <div class="ment2">
+          블루보틀에 오신 것을 <br />
+          환영합니다.
+        </div>
+        <button>블루보틀 소개</button>
+      </main>
+
+      <footer>CONNECT WITH US</footer>
+    </div>
+  </body>
+</html>
