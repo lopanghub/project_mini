@@ -71,10 +71,11 @@ main a:hover{
 }
 /* 푸터 */
 footer{
-    margin-left: 50px;
+    width: 1000px;
+    margin: 0 auto;
 }
 footer h2{
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-left: 100px;
 }
 ul{
