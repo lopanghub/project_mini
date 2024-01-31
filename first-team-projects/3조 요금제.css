@@ -58,7 +58,7 @@ button{
     font-size: 15px;
 }
 main a{
-    /* border: 3px solid gold; */
+    
     color: black;
     text-decoration: none;
 }
@@ -81,12 +81,37 @@ footer h2{
 }
 ul{
     list-style: none;
-}
-li{
     
+}
+
+footer p{
+    color: gray; display:none;
+}
+
+.q1:hover .a1{
+    display: block;
+}
+.q2:hover .a2{
+    display: block;
+}
+.q3:hover .a3{
+    display: block;
+}
+.q4:hover .a4{
+    display: block;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:visited{
+    color: blue;
 }
 
 
 
 /* 메인에 요금제 섹션 만들기
 푸터에 텍스트 박스 만들기 */
+/* 푸터에 구현하고자한 기능은 자바스크립트가 필요해서 임시로
+hover 기능을 써서 구현 */
