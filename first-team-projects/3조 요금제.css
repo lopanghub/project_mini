@@ -55,28 +55,29 @@ button{
     background-color: lightblue;
     border-radius: 20px;
     margin: 5px;
+    font-size: 15px;
 }
 main a{
+    /* border: 3px solid gold; */
     color: black;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
 }
 main button:hover{
     background-color: beige;
     transform: scale(1.1);
-}
-main a:hover{
     color: darkred;
+    font-weight: 800;
+    cursor:pointer
 }
+
 /* 푸터 */
 footer{
     width: 1000px;
     margin: 0 auto;
 }
 footer h2{
-    /* background-color: aqua; */
-    margin-left: 100px;
+    
+    margin-left: 150px;
 }
 ul{
     list-style: none;
