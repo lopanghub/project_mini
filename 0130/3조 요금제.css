@@ -57,6 +57,9 @@ main button:hover{
     background-color: beige;
     transform: scale(1.1);
 }
+main a:hover{
+    color: darkred;
+}
 /* 푸터 */
 footer{
     margin-left: 50px;
@@ -71,3 +74,8 @@ ul{
 li{
     
 }
+
+
+
+/* 메인에 요금제 섹션 만들기
+푸터에 텍스트 박스 만들기 */
