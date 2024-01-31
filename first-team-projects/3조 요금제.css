@@ -24,14 +24,16 @@ header a:hover{
     text-decoration: underline;
 }
 #search_{
-    width: 300px; height: 30px;
+    width: 30vw; height: 30px;
 }
+
 /* 메인 */
 /* 로고 이미지는 임시로 올렸어요 추후 수정 예정 */
 main{
-    background-image: url(https://cdn.pixabay.com/photo/2020/01/31/07/53/man-4807395_1280.jpg);
-    background-repeat: no-repeat;
-    height: 800px; 
+    background: url(https://cdn.pixabay.com/photo/2020/01/31/07/53/man-4807395_1280.jpg)  no-repeat ;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -42,10 +44,17 @@ main{
 main h1,h2,div{
     margin: 20px;
 }
+main h1{
+    font-size: 4vw;
+}
+main h2{
+    font-size: 2.5vw;
+}
 button{
     width: 200px; height: 50px;
     background-color: lightblue;
     border-radius: 20px;
+    margin: 5px;
 }
 main a{
     color: black;
