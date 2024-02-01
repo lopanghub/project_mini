@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>project practice</title>
+
+    <style>
+
+      * {
+
+        margin: 0;
+
+        padding: 0;
+
+      }
+
+      .whole {
+
+        border: 1px solid grey;
+
+        width: 900px;
+
+        height: 2000px;
+
+        margin: 20px;
+
+        /*text-align: center;*/ 😀
+
+      }
+
+      header,
+
+      main,
+
+      aside,
+
+      .login,
+
+      .remote,
+
+      .chart {
+
+        border: 1px solid grey;
+
+        margin: 15px;
+
+        box-sizing: border-box;
+
+        padding: 10px;
+
+        text-align: center; 😀
+
+      }
+
+      header {
+
+        margin: 0;
+
+        border: none;
+
+        background-image: url(#);
+
+        height: 60px;
+
+        line-height: 40px;
+
+      }
+      /*😀*/
+      nav a{
+        background-color: bisque;
+        height: 30px;
+        margin: 5px;
+        padding: 5px 3px 5px 3px;
+        border-radius: 5px;
+      }
+      nav a:hover{
+        font-weight: bold;
+        color: green;
+        background-color: yellowgreen;
+      }
+      /*😀*/
+
+      main {
+
+        float: left;
+
+        width: 703px;
+
+        height: 1000px;
+
+        padding: 20px;
+
+        margin-right: 0;
+
+      }
+      .main_title{
+        text-align: left;
+        margin: 5px;
+      }
+
+      .cover01, .cover02, .cover03, .cover04, .cover05, .cover06{
+        display: inline;
+      }
+
+      .movies{
+        display: flex;
+      }
+      .movie01, .movie02{
+       flex-direction: row;
+       margin: 10px;
+      }
+
+      .login {
+
+        float: right;
+
+        width: 150px;
+
+        height: 120px;
+
+      }
+
+      aside {
+
+        float: right;
+
+        width: 150px;
+
+        height: 400px;
+
+        margin: 0px 15px;
+
+      }
+
+      .chart {
+
+        float: right;
+
+        width: 150px;
+
+        height: 200px;
+
+      }
+
+      .remote {
+
+        width: 100px;
+
+        height: 100px;
+
+        position: fixed;
+
+        top: 600px;
+
+        right: 50px;
+
+      }
+
+      #id,
+
+      #pw {
+
+        width: 80px;
+
+      }
+
+      ul {
+
+        list-style: none;
+
+      }
+
+      a {
+
+        text-decoration: none;
+
+        color: green;
+
+      }
+
+      .top {
+
+        color: black;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="whole">
+
+      <header><h1>제목</h1></header>
+
+      <!-- 양은정😀 -->
+      <div class="menu"> 
+        <nav>
+            <a href="#" class="nav-menu">멜론차트</a>
+            <a href="#" class="nav-menu">뮤직어워드</a>
+            <a href="#" class="nav-menu">매거진</a>
+            <a href="#" class="nav-menu">이벤트</a>
+        </nav>
+      </div>
+      <!-- 양은정 -->
+​
+
+      <main>
+        <h3 class="now_playing">🎵Now Playing</h3>
+        <audio src="images/once-in-paris-168895.mp3"
+        controls loop auto muted="muted" type="audio/wav"></audio>
+
+        <h3 class="main_title">🎧인기 앨범</h3>
+        <div class="cover01">
+         <img src="https://cdnimg.melon.co.kr/cm2/album/images/113/48/980/11348980_20231020173557_500.jpg/melon/resize/260/quality/80/optimize" width="30%"/>
+        </div>
+        <div class="cover02">
+        <img src="https://cdnimg.melon.co.kr/cm2/album/images/109/22/231/10922231_20220527120653_500.jpg?d4668bd274949f814ae2ccadee6f42eb/melon/resize/260/quality/80/optimize" width="30%"/>
+        </div>
+        <div class="cover03">
+          <img src="https://cdnimg.melon.co.kr/cm/album/images/023/20/582/2320582_500.jpg/melon/resize/260/quality/80/optimize" width="30%"/>
+        </div>
+        <div class="cover04">
+          <img src="https://cdnimg.melon.co.kr/cm/album/images/026/95/228/2695228_500.jpg/melon/resize/260/quality/80/optimize" width="30%" />
+        </div>
+        <div class="cover05">
+        <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/29/537/11229537_20230421170444_500.jpg/melon/resize/260/quality/80/optimize" width="30%" />
+         </div>
+         <div class="cover06">
+        <img src="https://cdnimg.melon.co.kr/cm/album/images/026/80/682/2680682_500.jpg?cde46cb9eb41b1cb1320c66b74e4f912/melon/resize/260/quality/80/optimize" width="30%" />
+         </div>
+        <br>
+        <br>
+        <h3 class="main_title">🎬뮤직비디오</h3>
+        <section class="movies"> <!--뮤직비디오 부분 전체-->
+             <div class="movie01">
+                <p>세븐틴(SEVENTEEN) - 음악의 신</p>
+                  <iframe width="300" height="169" src="https://www.youtube.com/embed/zSQ48zyWZrY?si=FgIOiMTZFfzcMRmk"
+                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             </div>
+              <div class="movie02">
+                 <p>세븐틴(SEVENTEEN) - 손오공</p>
+                <iframe width="300" height="169" src="https://www.youtube.com/embed/-GQg25oP0S4?si=UJmajt1EZIJEe6yM"
+                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+        </section>
+
+      </main>
+      
+​
+
+      <div class="login">
+
+        <legend>로그인</legend>
+
+        <label for="id">ID</label> <input type="text" id="id" /> <label for="id">PW</label>
+
+        <input type="password" id="pw" />
+
+        <input type="submit" value="Login" />
+
+        <input type="reset" value="reset" />
+
+      </div>
+
+​
+
+      <aside>
+
+        사이드바
+
+        <ul>
+
+          <li><a href="#">click</a></li>
+
+          <li><a href="#">click</a></li>
+
+          <li><a href="#">click</a></li>
+
+          <li><a href="#">click</a></li>
+
+          <li><a href="#">click</a></li>
+
+          <li><a href="#">click</a></li>
+
+          <li><a href="#">click</a></li>
+
+        </ul>
+
+      </aside>
+
+​
+
+      <div class="remote">
+
+        <ul>
+
+          <li><a href="#">button</a></li>
+
+          <li><a href="#">button</a></li>
+
+          <li><a href="#">button</a></li>
+
+          <li><a href="#" class="top">맨 위로</a></li>
+
+        </ul>
+
+      </div>
+
+​
+
+      <div class="chart">
+
+        차트
+
+        <ul>
+
+          <li>1. 가수 - 노래</li>
+
+          <li>2. 가수 - 노래</li>
+
+          <li>3. 가수 - 노래</li>
+
+          <li>4. 가수 - 노래</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
