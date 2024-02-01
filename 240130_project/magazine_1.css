@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.whole {
+  /* border: 1px solid grey; */
+  width: 1100px;
+  height: 2000px;
+  margin: 20px;
+}
+header,
+main,
+aside,
+.login,
+.remote,
+.chart {
+  border: 1px solid grey;
+  margin: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 헤더 */
+header {
+  margin: 0;
+  border: none;
+  background-image: url(#);
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .search_box {
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid black;
+}
+.search_box input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* 메뉴 */
+menu {
+  display: flex;
+  flex-direction: column;
+}
+nav a {
+  height: 30px;
+  margin: 15px;
+  padding: 3px 43px 3px 42.5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav a:hover {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.659);
+}
+
+/* 메인 */
+main {
+  text-align: center;
+  width: 703px;
+  float: left;
+  padding: 20px;
+  margin-right: 0;
+}
+.mainHeader {
+  color: black;
+}
+main h3 {
+  text-align: left;
+  margin: 10px;
+}
+main span {
+  color: rgb(81, 136, 81);
+  font-weight: bolder;
+  margin-right: 10px;
+}
+main img {
+  width: 600px;
+}
+main h2 {
+  text-align: left;
+  margin: 20px;
+}
+.review img {
+  width: 50px;
+  height: 50px;
+}
+.review {
+  display: flex;
+  align-items: center;
+}
+#reviewSubmit {
+  width: 100px;
+  height: 100px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* 로그인 */
+
+.login {
+  font-family: monospace;
+  height: 100px;
+  width: 300px;
+  float: right;
+}
+.login input {
+  margin-top: 15px;
+  color: white;
+  cursor: pointer;
+}
+.login:hover {
+  text-decoration: underline;
+}
+.login input[type='submit'] {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.membership {
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  float: right;
+}
+
+/* 사이드바 */
+aside {
+  float: right;
+  width: 300px;
+  height: 280px;
+  margin: 0px 15px;
+}
+.s_1 {
+  font-size: small;
+
+  font-weight: bold;
+}
+
+/* 차트 */
+.chart {
+  float: right;
+  width: 300px;
+  height: 560px;
+  line-height: 30px;
+  text-align: left;
+}
+.chartHead {
+  text-align: center;
+}
+.chart a:hover {
+  background-color: aliceblue;
+}
+
+/* 🔴로그인, 사이드바, 차트 통합 */
+.log_chart {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 리모컨 */
+.remote {
+  width: 100px;
+  height: 65px;
+  position: fixed;
+  top: 600px;
+  right: 50px;
+}
+
+/* 기타 */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(71, 69, 69);
+}
+ol {
+  list-style-position: inside;
+}
+
+/* 푸터 */
+footer {
+  border-top: 1px solid gray;
+  margin: 15px;
+  clear: both;
+  text-align: left;
+  padding: 5px;
+}
+.announce {
+  display: flex;
+}
+.ann {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+.ann a {
+  width: 300px;
+  color: gray;
+  margin-left: 20px;
+}
+.cl {
+  padding: 15px;
+  text-align: center;
+  color: gray;
+}
+.cl p {
+  font-size: small;
+  display: inline;
+}
+.f_nav {
+  text-align: center;
+  font-size: small;
+  color: black;
+}
+.f_nav1:hover {
+  text-decoration: underline;
+}
