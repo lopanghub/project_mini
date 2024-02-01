@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.whole {
+  /* border: 1px solid grey; */
+  width: 900px;
+  height: 2000px;
+  margin: 20px;
+}
+header,
+main,
+aside,
+.login,
+.remote,
+.chart {
+  border: 1px solid grey;
+  margin: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 헤더 */
+header {
+  margin: 0;
+  border: none;
+  background-image: url(#);
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 메뉴 */
+nav a {
+  background-color: bisque;
+  height: 30px;
+  margin: 5px;
+  padding: 5px 3px 5px 3px;
+  border-radius: 5px;
+}
+nav a:hover {
+  font-weight: bold;
+  color: green;
+  background-color: yellowgreen;
+}
+
+/* 메인 */
+main {
+  text-align: center;
+  width: 703px;
+  float: left;
+  padding: 20px;
+  margin-right: 0;
+}
+main h3 {
+  text-align: left;
+  margin: 10px;
+}
+main span {
+  color: rgb(81, 136, 81);
+  font-weight: bolder;
+  margin-right: 10px;
+}
+main img {
+  width: 600px;
+}
+main h2 {
+  text-align: left;
+  margin: 20px;
+}
+.review img {
+  width: 50px;
+  height: 50px;
+}
+.review {
+  display: flex;
+  align-items: center;
+}
+#reviewSubmit {
+  width: 100px;
+  height: 100px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* 로그인 */
+.login {
+  float: right;
+  width: 150px;
+  height: 120px;
+}
+
+/* 사이드바 */
+aside {
+  float: right;
+  width: 150px;
+  height: 280px;
+  margin: 0px 15px;
+}
+.s_1 {
+  font-size: small;
+
+  font-weight: bold;
+}
+
+/* 차트 */
+.chart {
+  float: right;
+  width: 150px;
+  height: 560px;
+  line-height: 30px;
+  text-align: left;
+}
+.chartHead {
+  text-align: center;
+}
+.chart a:hover {
+  background-color: aliceblue;
+}
+
+/* 리모컨 */
+.remote {
+  width: 100px;
+  height: 65px;
+  position: fixed;
+  top: 600px;
+  right: 50px;
+}
+
+/* 로그인 */
+#id,
+#pw {
+  width: 80px;
+}
+
+/* 기타 */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(71, 69, 69);
+}
+ol {
+  list-style-position: inside;
+}
+
+/* 푸터 */
+footer {
+  border: 1px solid gray;
+  margin: 15px;
+  clear: both;
+  text-align: left;
+  padding: 5px;
+}
+.announce {
+  display: flex;
+}
+.ann {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+.ann a {
+  width: 300px;
+  color: gray;
+  margin-left: 20px;
+}
+.cl {
+  padding: 15px;
+}
+.cl p {
+  font-size: small;
+}
+.f_nav {
+  text-align: center;
+  font-size: small;
+}
+.f_nav1:hover {
+  text-decoration: underline;
+}

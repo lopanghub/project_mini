@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상요소</title>
+    <style>
+      .box::after {
+        content: '이후콘텐츠내용';
+        color: red;
+      }
+      .box::before {
+        content: '이전콘텐츠내용';
+        color: blue;
+      }
+      .order::before {
+        content: '주문폭주!!';
+        background-color: pink;
+        color: blue;
+      }
+      .new::after {
+        content: 'new';
+        color: white;
+        background-color: red;
+      }
+      .soldout::after {
+        content: '품절!!';
+        background-color: green;
+        color: white;
+      }
+      ::before,
+      ::after {
+        margin: 0 5px;
+      }
+      li {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>가상요소 선택자 지정</h1>
+      <p>웹 디자이너</p>
+      <p>웹 퍼블리셔</p>
+      <p>프론트 엔드</p>
+      <p>백 엔드</p>
+    </div>
+    <div class="list">
+      <h1>제품목록</h1>
+      <ul>
+        <li class="order">제품A</li>
+        <li>제품B</li>
+        <li>제품C</li>
+        <li class="new">제품D</li>
+        <li>제품E</li>
+        <li class="order">제품F</li>
+        <li class="soldout">제품G</li>
+        <li class="soldout">제품H</li>
+      </ul>
+    </div>
+  </body>
+</html>

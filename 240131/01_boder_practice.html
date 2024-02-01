@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      .univ,
+      .galaxy,
+      .table {
+        width: 300px;
+        border: 1px solid rgb(226, 114, 49);
+        margin: 10px;
+      }
+      p {
+        text-align: left;
+      }
+      .univ {
+        border-radius: 40px 40px 0px 0px;
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Hubble_ultra_deep_field.jpg/300px-Hubble_ultra_deep_field.jpg');
+        color: white;
+      }
+      .galaxy {
+        background-color: beige;
+      }
+      .table {
+        background-color: rgb(206, 141, 121);
+        border-radius: 0px 0px 40px 40px;
+        display: flex;
+        justify-content: center;
+      }
+      table {
+        background-color: rgb(144, 171, 184);
+        margin: 10px;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="univ">
+      <h3>우주</h3>
+      <p>
+        우주란 행성, 별, 은하계 그리고 모든 <br />
+        형태의 물질과 에너지를 포함한 <br />
+        모든 시공간과 그 내용물 모두를 <br />
+        통틀어 이른다.
+      </p>
+    </div>
+    <div class="galaxy">
+      <h3>은하계</h3>
+      <p>
+        은하는 우주를 구성하고 있는 단위의 <br />
+        하나로, 수천억 개 이상의 별
+      </p>
+    </div>
+    <div class="table">
+      <table>
+        <tr>
+          <th>행성</th>
+          <th>탈출 속력 U<sub>esc</sub>(Km/s)</th>
+        </tr>
+        <tr>
+          <td>수성</td>
+          <td>4.3</td>
+        </tr>
+        <tr>
+          <td>금성</td>
+          <td>10.3</td>
+        </tr>
+        <tr>
+          <td>지구</td>
+          <td>11.2</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
