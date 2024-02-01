@@ -65,29 +65,29 @@
         padding: 20px;
         margin-right: 0;
       }
-      .main_title{
+      .main_title{  /* 메인 제목들 */
         text-align: left;
         margin-bottom: 10px;
       }
 
-      .cover_all{
+      .cover_all{  /* 앨범커버+텍스트 전체 */
         height: 450px;
         width: 660px;
        /* border: 1px solid blue; */
       }
-      .cover01, .cover02, .cover03, .cover04, .cover05, .cover06 {
+      .cover01, .cover02, .cover03, .cover04, .cover05, .cover06 { /* 앨범커버 전체 */
         width: 180px;
         height: 200px;
        /* border: 1px solid red; */
       }
-      .cover123{   
+      .cover123{   /* 앨범커버 상단 3개 */
        /* border: 1px solid blue;*/
        display: flex;
        flex-wrap: row wrap;
        justify-content: space-between;
 
       }
-      .cover456{
+      .cover456{ /* 앨범커버 하단 3개 */
         /* border: 1px solid brown; */
         display: flex;
         flex-wrap: row wrap;
@@ -95,21 +95,21 @@
         margin-top: 40px;
       }
       
-      .cover_img{
+      .cover_img{ /* 앨범커버들 사이즈 */
         width: 180px;
         height: 180px;
        /* border: 1px solid violet; */
       }
 
-      .cover_img:hover {
+      .cover_img:hover { /* 앨범커버에 커서 올리면 어두워지는 이펙트 */
         cursor: pointer;
         filter: brightness(0.5);
       }
       
-      .movies{
+      .movies{  /* 뮤비 전체 */
         display: flex;
       }
-      .movie01, .movie02{
+      .movie01, .movie02{ /* 뮤비 배열*/
        flex-direction: row;
        margin: 10px;
       }
@@ -241,10 +241,11 @@
 
         <!-- 메인 -->
         <main>
+           <!-- now playing 파트 / 오디오 다운로드받은 파일이라 바꿔야할수도 있습니다-->
           <h3 class="main_title">🎵 Now Playing</h3>
           <audio src="images/once-in-paris-168895.mp3"
             controls loop auto muted="muted" type="audio/wav"></audio>
-        
+          <!-- 인기 앨범 파트-->
           <h3 class="main_title">🎧 인기 앨범</h3>
           <div class="cover_all">
             <div class="cover123">
@@ -291,6 +292,7 @@
         
           <br />
           <br />
+          <!-- 뮤직비디오 파트 -->
           <h3 class="main_title">🎬 뮤직비디오</h3>
           <section class="movies">
             <div class="movie01">
