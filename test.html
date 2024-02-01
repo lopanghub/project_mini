@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!--HTML5 정의문/선언문-->
+<html lang="ko"> <!--language_영어권en, 한글 ko-->
+<head>
+    <meta charset="UTF-8"> <!--문자셋 한글이 깨지지 않게 인코딩-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹페이지</title> <!--웹문서의 제목 정의 / 검색엔진 최적화-->
+</head>
+<body>
+   <!-- "ctrl+/":주석처리 -->
+   <!-- "shift+alt+아래화살표" : 한줄복사(커서있는곳) -->
+  <h1>웹 개발 기초</h1>
+  <h2>HTML : 웹사이트의 모습을 기술하기 위한 마크업 언어.</h2>
+  프로그래밍 언어가 아니라 <strong>마크업 정보</strong>를 표현하는
+  <b>마크업 언어</b>로
+  문서의 내용 이외의 문서 언어라는 뜻이다.<br>
+  <!--strong : 강조할 때 굵게 표시
+        b : 단순히 굵게 표시-->
+
+  <em> 중요한 내용을 담고 있는 em태그 </em><br>
+  <i> 단순히 이탤릭체로 표시</i>
+  <p> 웹의 창시자인 팀 버너스 리
+    <q cite="https://ko.wikipedia.org/wiki/%ED%8C%80_%EB%B2%84%EB%84%88%EC%8A%A4%EB%A6%AC">
+    웹의 힘은 보편성에 있다.
+    장애에 구애없이 모든 사람이 접근할 수 있는 것이 필수 요소이다.
+    </q> <!--q : 인용 내용 표시하기-->
+    라는 말로 웹 접근성을 설명한다.
+  </p>
+  
+  <p>루비(Ruby)는 1995년 일본의 프로그래머인 마치모토 유키히로 
+     <ruby>松本行弘
+     <rt>まつもとゆきひろ</rt> </ruby>가 만든 프로그래밍 언어입니다.
+     <ruby>윗주 <rt>ruby</rt></ruby> 윗주 (루비ruby) 사용
+     <ruby>아래글자<rt>윗글자</rt></ruby> <br><br>
+  </p>  
+
+  <h3>제목을 나타내는 태그</h3>
+  <h4>제목을 나타내는 태그</h4>
+  <h5>제목을 나타내는 태그</h5>
+  <h6>제목을 나타내는 태그</h6>
+  <p>문단 태그로 표현 문단 태그로 표현<br> 문단 태그로 표현 </p>
+  <img src="images/귤.jpg" alt="귤"> <!--alt 태그 : 이미지를 설명-->
+  <!--이미지 상대경로-->
+  <img src="images/blackcat.gif" alt="깜냥" width="200"> 
+  <!-- 이미지 절대경로 -->
+  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcEBgIDCAH/xAAwEAABAwIEBAUEAQUAAAAAAAABAAIDBBEFBhIhBxMxQRQiUWGRcYHBwpIVJDJCYv/EABkBAQADAQEAAAAAAAAAAAAAAAACBAUDAf/EACARAAMBAAICAgMAAAAAAAAAAAABAgMRIQQxEhMFIlH/2gAMAwEAAhEDEQA/ALUREUioEREAREQBERAEREAREQBERAF1zythj1ut1DRc9ybBdi1ziLGZMlYppvqZG2QW9Wva78KNeuiUJOkmRuLZoxWlrJI6eCExtcLlzD5W77m5Fzt0Hyo9tRmbHG1k8GNU8cLS0R0tIBdzSNySRqB6bXB6+yhcrYzNUQRQVj3VOxBZOdYI9CCsiszI7C6mSGhoKKBvU6Kbr9wQsy9deH2bkeLnykp7JRmcqilbFIItMTRonjdJzBq7FhO4BG9idlt2E43BiMTHt0tLtI06vN5m6ht9FStXn+vqJXxTQUXLLv8AWmbc/N1LZHxB2KZ5wprZCWRc2V7Rs0HluA2+4XXG9VSmuzn5Hj5fXVJcNF0oiLQMUIiIAiIgChs6M5mUMaba/wDYzO+GE/hTKxcViFRhVbCRcSU8jLet2kLw9l8NMpDLFTFz439Dbf4Um+en8VM+the9vby7KD4fUjK/FqaGZ5bDbXIQd9IFza/dWhh0UIo6jw8cUrZInt5rrsdM028pGrYbdtx6gk3o14k6w5bNbX8heGimEvRSktJB/Umtd5Y5JN79hdbvwooWQ56qAxweIaKR1x7vYPyVgZmwuhdT4jVRPDKmmma7w7BZjGOB/wATe5vcG1hax9lLcCmc3EsbqLHyxRMBPuXH9VOMqnRd9DTylt4zr48Pkt9ERXDICIiAIiIAhbqBae4si+jqgPNmWqs4bibQW6hG90b2+o3BVy4FX0NTQ1b6eOmMTKZ1mczUYbW2PQ3tv6m2ypSqbyM04jENtFdMz4eQsLHBqq3agLriv1L95zq1T9m0ZvxSlkkmp6WOPnPcGTzRS6mlo3DdhYOvsbE7BbnwPga3C8WqGttrqWR7f8sv+ypQO0g2KvjgpByslCXvPVyvJ9bWb+qSm65G3xzw+tf031ERdigEREAREQBERAecs1x+Gz9i7ALA1rn/AMt/yobGnaqpxV2Zm4fw4vjoxRspaH25zBs7YWBafjY+6jqrhFhdXJzTjlVAT1Z4XXb7rm0y7GkcLspEq+OFlYKfJOHQnqTK4/eRyh6jg7CHtbQ4lI8XGqSojAFu9mjv9St8wbLMGGU0UAlL2xtDQALBeymQ3uGuESkE/MHRZK4RxMjFmhc1MqhERAEREAREQBERAEREAREQBERAf//Z">
+   <!--이미지 확장자의 종류
+    GIF : 투명한 배경이나 움직이는 이미지를 만들 수 있다.
+    JPG / JPEG : 일반적으로 많이 쓰이는 이미지 확장자
+                 저장을 반복하다 보면 화질이 떨어진다.
+    PNG : 투명 배경을 만들 수 있고 다양한 색상 표현.
+          네트워크용으로 개발되어 최근 많이 사용.  -->
+ 
+  <table border> <!--표-->
+    <tr> <!--가로줄-->
+        <td>자산: 현금, <br> 현금 외 자산</td> <!--td:칸-->
+        <!--rowspan:열 합치는-->
+        <td>부채: 차입금, </td>
+    </tr>
+    <tr>
+        <td>내용을 입력</td>
+        <td>자본: 자본금, 이익잉여금</td>
+    </tr>
+  </table>
+ 
+  
+  <h3> ul : unorderen list 목차가 없는 리스트</h3>
+  <ul>
+     <li>HTML</li>
+     <li>CSS</li>
+     <li>JavaScript</li>
+  </ul>
+
+  <h3> ol : ordered list 목차가 있는 리스트</h3>
+  <ol>
+     <li>html</li>
+     <li>CSS</li>
+     <li>JavaScript</li>
+  </ol>
+
+
+</body>
+</html>
+<!-- 꺽쇠 없이 느낌표+엔터하면 자동으로 세팅 태그가 뜸 -->
+<!-- 태그 이미 있는데서 주석 단축기는 사용불가 -->
+<!-- img태그는 별도로 닫기 태그 없음 -->
+<!--
+상대경로 : 지금 위치를 기준으로 폴더 안에 있는 파일로 접근
+절대경로 : 이미지 다운 없이 주소 등
+/ : 루트(하위)
+./ : 현재 위치의 폴더
+../ 현재 위치의 상단 폴더(상위)-->
