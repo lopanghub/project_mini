@@ -69,6 +69,22 @@ main button:hover{
     font-weight: 800;
     cursor:pointer
 }
+@media screen and (max-width:768px){
+    .search{
+        display: none;
+    }
+    header{
+        height: 250px;
+    }
+    .h_nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .rate{
+        flex-direction: column;
+    }
+}
+
 /* 요금제 섹션 */
 
 section h1{
@@ -80,20 +96,56 @@ section h1{
     justify-content: center;
 }
 .plan1 {
+    display: inline-block;
     width: 500px; 
     height: 400px;
-
+    padding: 15px;
+    margin: 0;
     box-shadow: 0 0 5px gray;
-    
 }
+
 .plan2 {
     width: 500px; 
     height: 400px;
+    padding: 15px;
+    margin: 0;
     box-shadow: 0 0 5px gray;
     position: relative;
 }
-section ul{
-    list-style: circle;
+section li{
+    line-height: 2;
+}
+section button{
+    width: 300px; height: 50px;
+    background-color: black; 
+    color: white;   
+    font-size: 20px;
+    margin: 10px;
+}
+section button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.event::after {
+    margin-left: 10px;
+    content: "1개월 무료";
+    color: aliceblue;
+    background-color: blue;
+    font-size: 12px;
+}
+#rat{
+    visibility: hidden;
+}
+
+
+.announce{
+    font-size: small;
+    color: gray;
+}
+
+.announce a:visited{
+    color: gray;
 }
 
 /* 푸터 */
@@ -105,7 +157,7 @@ footer h2{
     
     margin-left: 150px;
 }
-footer ul{
+ul{
     list-style: none;
     
 }
@@ -136,7 +188,17 @@ footer a:visited{
 }
 
 
-
+/* 0131 */
 /* 할거 없으면 메인에 요금제 섹션 만들기 */
 /* 푸터에 구현하고자한 기능은 자바스크립트가 필요해서 임시로
 hover 기능을 써서 구현 */
+
+/* 0201 */
+/* 추가한것 */
+/* 요금제 섹션 추가 앵커 추가 */
+/* 추가할 사항 */
+/* 미디어 쿼리 활용해서 창이 줄어들었을때 헤더 증가 우측 div column 화*/
+/* 검색창 삭제 요금제 섹션 박스 겹치고 호버링시 위치 역전 */
+
+/* 1730분 추가
+할거 거의 다함 마지막으로 호버시 박스 위치만 역전되게 만들면 끝 이건 내일 */
