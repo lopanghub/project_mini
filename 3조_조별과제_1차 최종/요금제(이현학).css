@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+}
+/* 헤더  */
+header{
+    display: flex;
+    background-color: lightslategray;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+header a:hover{
+    color: lightgreen;
+    text-decoration: underline;
+}
+#search_{
+    width: 30vw; height: 30px;
+}
+
+/* 요금제 메인 */
+/* 로고 이미지는 임시로 올렸어요 추후 수정 예정 */
+main{
+    background: url(https://cdn.pixabay.com/photo/2020/01/31/07/53/man-4807395_1280.jpg)  no-repeat ;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+main h1,h2,div{
+    margin: 20px;
+}
+main h1{
+    font-size: 4vw;
+}
+main h2{
+    font-size: 2.5vw;
+}
+button{
+    width: 200px; height: 50px;
+    background-color: lightblue;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 15px;
+}
+main a{
+    
+    color: black;
+    text-decoration: none;
+}
+main button:hover{
+    background-color: beige;
+    transform: scale(1.1);
+    color: darkred;
+    font-weight: 800;
+    cursor:pointer
+}
+@media screen and (max-width:768px){
+    .search{
+        display: none;
+    }
+    header{
+        height: 250px;
+    }
+    .h_nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .rate{
+        flex-direction: column;
+    }
+    .plan1, .plan2{
+        pointer-events: none;
+    }
+
+}
+
+/* 요금제 섹션 */
+
+section h1{
+    font-size: 2.5vw;
+    text-align: center;
+}
+.rate{
+    display: flex;
+    justify-content: center;
+   
+}
+.plan1, .plan2 {
+    
+    width: 500px; 
+    height: 400px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0 0 5px gray;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.plan1:hover{
+    transform: translate(275px, 0) scale(1.1);
+    
+}
+.plan1:hover + .plan2{
+    opacity: 0.1; 
+}
+.plan2.active{
+    transform: translate(-275px, 0) scale(1.1)
+}
+
+section li{
+    line-height: 2;
+}
+section button{
+    width: 300px; height: 50px;
+    background-color: black; 
+    color: white;   
+    font-size: 20px;
+    margin: 10px;
+}
+section button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.event::after {
+    margin-left: 10px;
+    content: "1개월 무료";
+    color: aliceblue;
+    background-color: blue;
+    font-size: 12px;
+}
+#rat{
+    visibility: hidden;
+}
+
+.announce{
+    font-size: small;
+    color: gray;
+}
+.announce a{
+    color: gray;
+}
+.announce a:visited{
+    color: gray;
+}
+
+/* 푸터 */
+footer{
+    width: 1000px;
+    margin: 0 auto;
+}
+footer h2{
+    
+    margin-left: 150px;
+}
+ul{
+    list-style: none;
+    
+}
+
+footer p{
+    color: gray; display:none;
+}
+
+.q1:hover .a1{
+    display: block;
+}
+.q2:hover .a2{
+    display: block;
+}
+.q3:hover .a3{
+    display: block;
+}
+.q4:hover .a4{
+    display: block;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:visited{
+    color: blue;
+}
+
+
