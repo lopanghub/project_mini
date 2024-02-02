@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요금제 구매창</title>
     <link rel="stylesheet" href="요금제(이현학).css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -23,8 +24,8 @@
             </div>
             <div class="h_nav">
                 <a href="#" class="h_nav_menu">Premium</a>
-                <a href="#" class="h_nav_menu">sign in</a>
-                <a href="#" class="h_nav_menu">sign up</a>
+                <a href="login.html" class="h_nav_menu">sign in</a>
+                <a href="login.html" class="h_nav_menu">sign up</a>
             </div>
         </header>
         
@@ -117,7 +118,22 @@
         </footer>
     </div>
 
-</body>
+    
 
+</body>
+<script>
+    $(document).ready(function(){
+
+        $('.plan2').mouseover(function(){
+            $(this).prev('.plan1').css({opacity:0.1});
+            $(this).addClass('active');
+        });
+
+        $('.plan2').mouseout(function(){
+            $(this).prev('.plan1').css({opacity:1});
+            $(this).removeClass('active');
+        });
+    })
+</script>
 
 </html>
