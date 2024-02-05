@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap') * {
-            }
+            @import url(https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap);
+            
             h1{
                 text-align: center;
                 margin-top: 130px;
@@ -95,7 +95,7 @@
         <div class="membership">
             <h3>서비스 약관에 동의해 주세요.</h3>
             <div class="all">
-                <label><input type="checkbox"/>모두 동의합니다.</label>
+                <label><input type="checkbox" id="agreeAll" onclick="toggleAllCheckbox(this)";/>모두 동의합니다.</label>
                 <p>전체 동의는 필수 및 선택정보에 대한 동의도 포함되어 있으며,<br>
                 개별적으로도 동의를 선택하실 수 있습니다. <br>
                 선택항목에 대한 동의를 거부하시는 경우에도 서비스는 이용이 가능합니다.</div></p>
@@ -126,4 +126,27 @@
         </div>
     </footer>
     </body>
+    <script type="text/javascript">
+
+        function checkAllCheckbox() { 
+          var agreeAllCheckbox = document.getElementById("agreeAll"); 
+          var e = document.querySelectorAll('input[type="checkbox"]:not(#agreeAll)'); 
+          for(var i = 0, len = e.length; i < len; ++i) { 
+            if(!e[i].checked) { 
+              agreeAllCheckbox.checked = false; 
+              return; 
+            } 
+          } 
+          agreeAllCheckbox.checked = true; 
+        }
+        
+        
+        
+        function toggleAllCheckbox(source) { 
+          var e = document.querySelectorAll('input[type="checkbox"]:not(#agreeAll)'); 
+          for(var i = 0, len = e.length; i < len; ++i) { 
+            e[i].checked = source.checked; 
+          } 
+        }
+    </script>
 </html>
